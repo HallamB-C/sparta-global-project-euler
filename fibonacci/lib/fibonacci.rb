@@ -10,15 +10,15 @@ class Fibonacci
     # puts @oldnum
   end
 
-  def iterate number_of_terms
-    i = 1
+  def iterate limit
     j = 0
     k = 1
-    while k < number_of_terms do
+    while k < limit do
       j,k = k, j+k
       if check_even(k)
         @evens << k
       end
+      puts j
     end
     j
   end
@@ -32,3 +32,7 @@ class Fibonacci
   end
 
 end
+
+bob = Fibonacci.new
+puts bob.iterate(4000000)
+puts bob.sum_evens

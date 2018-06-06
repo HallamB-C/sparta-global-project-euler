@@ -14,26 +14,13 @@ describe 'Creates fibonacci test' do
     expect(@fib.check_even(2)).to eq true
   end
 
-  it 'method should return the highest fibonacci number that is less than the number given to the method' do
-    expect(@fib.iterate(10)).to eq 8
+  it 'method should return the highest' do
+    expect(@fib.iterate(4000000)).to eq 3524578
   end
 
   it 'method should return the sum of all numbers in the evens array.
       The evens array is the same as the one created in the iteration test above' do
-    expect(@fib.sum_evens).to eq 10
+    expect(@fib.sum_evens).to eq 4613732
   end
-
-  it 'method should return the sum of all numbers in the array' do
-    expect(@fib.iterate(4000000)).to eq 3524578
-  end
-
-
-
-
-
-
-
-
-
 
 end
