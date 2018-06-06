@@ -14,4 +14,9 @@ cd to the project folder of your choice then run
 rspec
 ```
 to see the tests in action
-### mu
+
+### Multiples of 3 and 5
+Adds all the multiples of 3 and 5 below a given limit
+
+### Fibonacci
+Sums all even fibonacci numbers below a given value
